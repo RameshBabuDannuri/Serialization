@@ -128,8 +128,8 @@ public class OrderOfSerializationDemo1 {
         System.out.println(deSerializeStudent);
     }
 }
-/*
-* Program 2: De-serialization is done in different than serialization order
+
+ Program 2: De-serialization is done in different than serialization order
 ------------------------------------------------------------------------------------
 In this program, irrespective of whether we know serialization order or NOT, we will perform de-serialization 
 in some random order
@@ -384,9 +384,9 @@ Important points about Serialization Order:
 Rule 1: all classes that need to be serialized must implement java.io.Serializable interface
 Order of Serialization is very important to know, because we need to follow the same order while de-serializing the objects
 If the Order of Serialization is unknown, then it may throw java.lang.ClassCastException
-To overcome ClassCastException, we can 1st check type of object using instanceOf operator and then assign it to proper class after doing necessary type-casting
+To overcome ClassCastException, we can 1st check type of object using instanceOf operator and then assign it to proper 
+class after doing necessary type-casting
 Exception: iterating through while loop may throw EOFException, we need catch this exception and handle it properly
 
 
 
-* */
